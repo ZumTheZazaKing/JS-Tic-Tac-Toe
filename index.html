@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Tic-Tac-Toe</title>
+</head>
+<body>
+
+    <div id="modal">
+        <div id="modal-content">
+
+            <p>Congratulations! You won!</p>
+
+            <button onclick="window.location.reload()">Play Again</button>
+
+        </div>
+    </div>
+
+    <p id="title">Tic Tac Toe<br>
+        <span id="desc">Can you beat the computer?</span>
+    </p>
+
+    <div id="container">
+        <p class="notifier" id="user">Your Turn</p>
+        <div id="cell-container">
+            <div data-cell-index="0" class="unchecked cell"></div>
+            <div data-cell-index="1" class="unchecked cell"></div>
+            <div data-cell-index="2" class="unchecked cell"></div>
+            <div data-cell-index="3" class="unchecked cell"></div>
+            <div data-cell-index="4" class="unchecked cell"></div>
+            <div data-cell-index="5" class="unchecked cell"></div>
+            <div data-cell-index="6" class="unchecked cell"></div>
+            <div data-cell-index="7" class="unchecked cell"></div>
+            <div data-cell-index="8" class="unchecked cell"></div>
+        </div>
+        <p class="notifier" id="computer">Computer's Turn</p>
+    </div>
+    
+    <script defer src="script.js"></script>
+</body>
+</html>
